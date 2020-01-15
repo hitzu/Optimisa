@@ -1,0 +1,32 @@
+.loginFormContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.loginFormContainer button:focus{outline: none;}
+
+.loginFormContainer button{
+    background: #0C1BFF;
+    border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 82%;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.loginFormContainer h2{
+    width: 150px;
+    padding-left: 41px;
+    margin-top: 40px;
+    align-self: flex-start;
+    font-size: 35px;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+}
