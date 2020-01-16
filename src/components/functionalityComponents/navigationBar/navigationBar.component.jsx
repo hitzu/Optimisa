@@ -23,7 +23,7 @@ export class NavigationBar extends Component {
         this.setState({
             viewSelected : view
         })
-        // this.props.changeView(view)
+        this.props.changeView(view)
     }
 
 	render() {

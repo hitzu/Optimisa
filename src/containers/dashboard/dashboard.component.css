@@ -16,7 +16,7 @@
     height: 50px;
 }
 
-.dashboard-main-container .body{
+.dashboard-main-container .bodyHome{
     position: absolute !important;
     top: 50px;
     left: 0px;
@@ -28,7 +28,7 @@
     flex-direction: column;
 }
 
-.dashboard-main-container .body .welcomeUser{
+.dashboard-main-container .bodyHome .welcomeUser{
     width: 85%;
     height: 200px;
     display: flex;
@@ -39,31 +39,77 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.dashboard-main-container .body .containerFragments{
+.dashboard-main-container .bodyHome .containerFragments{
     width: 85%;
     height: calc(100% - 200px);
     display: flex;
     justify-content: center;
     align-items: flex-start;
     justify-content: space-around;
-    border : 2px solid red
 }
 
-.dashboard-main-container .body .containerFragments .transactionPie{
+.dashboard-main-container .bodyHome .containerFragments .transactionPie{
     width: 30%;
     
     border : 1px solid rgba(0, 0, 0, 0.2)
 }
 
-.dashboard-main-container .body .containerFragments .exampleLorem{ 
+.dashboard-main-container .bodyHome .containerFragments .exampleLorem{ 
     width: 320px;
     height: 650px;
     border : 1px solid rgba(0, 0, 0, 0.2)
     
 }
 
-.dashboard-main-container .body .containerFragments .table{
+.dashboard-main-container .bodyHome .containerFragments .table{
     width: 30%;
     height: 200px;
     border : 1px solid rgba(0, 0, 0, 0.2)
+}
+
+.dashboard-main-container .bodyTransfer{
+    position: absolute !important;
+    top: 50px;
+    left: 0px;
+    width: 100%;
+    height: calc(100% - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dashboard-main-container .bodyTransfer .containerTransferAndChart{
+
+    margin-top: 25px;
+    height: 600px;
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+.dashboard-main-container .bodyTransfer .containerTransferAndChart .transfer{
+    width: 25%;
+    height: 300px;
+    border : 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 18px;
+}
+
+.dashboard-main-container .bodyTransfer .containerTransferAndChart .chart{
+    width: 45%;
+    height: 600px;
+    border : 2px solid red;
+}
+
+.dashboard-main-container .bodyTransfer .tables{
+    width: 85%;
+    margin-top: 75px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border : 2px solid red;
 }

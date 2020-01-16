@@ -1,0 +1,126 @@
+.newTransferContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding-left : 5px;
+    padding-right: 5px;
+
+}
+
+.newTransferContainer .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color : #777;
+    font-size: 18px;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.originAccount{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.originAccount .originAccountTitle {
+    align-self: flex-start;
+    width: 100%;
+    font-size: 14px;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.originAccount .originAccountInput{
+    margin-top : 15px;
+    width: 100%;
+}
+
+.originAccount .originAccountInput select{
+    width: 250px ;
+}
+
+.destination{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+
+.destination .destinationTitle {
+    width: 100%;
+    font-size: 14px;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.destination .destinationInput{
+    margin-top : 15px;
+    width: 100%;
+}
+
+.destination .destinationInput input{
+    width: 250px ;
+}
+
+
+.amount{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+
+.amount .amountTitle {
+    width: 100%;
+    font-size: 14px;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.amount .amountInput{
+    margin-top : 15px;
+    width: 100%;
+    justify-self: center;
+}
+
+.amount .amountInput input {
+    width: 250px ;
+}
+
+.newTransferContainer .buttons{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newTransferContainer .buttons .Transfer{
+    height: 45px;
+    width: 70px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: royalblue;
+    color: white;
+    cursor : pointer;
+}
+
+.newTransferContainer .buttons .Cancel{
+    height: 45px;
+    width: 70px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border : 1px solid black;
+    cursor : pointer;
+}
