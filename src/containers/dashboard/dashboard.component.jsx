@@ -8,7 +8,7 @@ export class Dashboard extends Component {
 	constructor(props){
 		super(props)
 		this.ls = new SecureLS({encodingType: 'rabbit', isCompression: true, encryptionSecret: 'OpTimiSSa'});
-		let decodedData = this.ls.get("inverso_metadata")
+		let decodedData = this.ls.get("metadata")
 		this.state = {
 			userName: decodedData.data.name,
 			viewInitial : 1,

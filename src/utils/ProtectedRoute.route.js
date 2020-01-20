@@ -6,8 +6,8 @@ const ProtectedRoute = ( {component : Component, ...rest} ) => {
 	return (
 		<Route {...rest} render = {
 			(props) => {
-				var ls = new SecureLS({encodingType: 'rabbit', isCompression: true, encryptionSecret: process.env.LS_SECRET_KEY});
-				let data  = ls.get("inverso_metadata")				
+				var ls = new SecureLS({encodingType: 'rabbit', isCompression: true, encryptionSecret: 'OpTimiSSa'});
+				let data  = ls.get("metadata")				
 				if (data) {
 						return <Component {...props} />
 				} else {

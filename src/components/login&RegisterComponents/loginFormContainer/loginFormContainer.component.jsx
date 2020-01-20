@@ -28,7 +28,7 @@ export class LoginFormContainer extends Component {
 
 	componentDidMount(){
 		try {
-			if (this.ls.get("inverso_metadata")) {
+			if (this.ls.get("metadata")) {
 				this.goToDashboard()
 			}	
 		} catch (error) {
@@ -54,7 +54,7 @@ export class LoginFormContainer extends Component {
 		let req = LoginRegisterServices.login(this.mail,this.password)
 		if (req){
 			let data = {name : this.mail.split("@")[0], mail : this.mail, password : this.password}
-			this.ls.set('inverso_metadata', {data: data}); 
+			this.ls.set('metadata', {data: data}); 
 			this.goToDashboard()
 		}
 		else{
