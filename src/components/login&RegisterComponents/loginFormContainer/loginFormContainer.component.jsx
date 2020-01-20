@@ -27,9 +27,14 @@ export class LoginFormContainer extends Component {
 	}
 
 	componentDidMount(){
-		if (this.ls.get("inverso_metadata")) {
-			this.goToDashboard()
+		try {
+			if (this.ls.get("inverso_metadata")) {
+				this.goToDashboard()
+			}	
+		} catch (error) {
+			console.log(error)
 		}
+		
 	}
 
 	goToDashboard = ()=>{
